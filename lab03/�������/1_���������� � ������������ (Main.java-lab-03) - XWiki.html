@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ??>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+  
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+                    
+                                    <title>Знакомство с интерфейсами (Main.java-lab-03) - XWiki</title>
+                <meta http-equiv="Content-Script-Type" content="text/javascript">
+                        <meta http-equiv="imagetoolbar" content="no">
+                      <link rel="alternate" type="application/x-wiki" title="Edit" href="/xwiki/bin/edit/Main/java%2Dlab%2D03">
+                    <link rel="canonical" href="/xwiki/bin/view/Main/java%2Dlab%2D03">
+                            <meta name="document" content="Main.java-lab-03">
+    <meta name="wiki" content="xwiki">
+    <meta name="space" content="Main">
+    <meta name="page" content="java-lab-03">
+    <meta name="version" content="2.2">
+    <meta name="restURL" content="/xwiki/rest/wikis/xwiki/spaces/Main/pages/java-lab-03">
+                <meta name="gwt:property" content="locale=ru">
+                <meta name="revisit-after" content="7 days">
+<meta name="description" content="Знакомство с интерфейсами">
+<meta name="keywords" content="wiki">
+<meta name="distribution" content="GLOBAL">
+<meta name="rating" content="General">
+<meta name="author" content="Леонид Выговский">
+<meta http-equiv="reply-to" content>
+<meta name="language" content="ru">
+<link rel="alternate" type="application/rss+xml" title="Wiki Feed RSS" href="/xwiki/bin/view/Main/WebRss?xpage=rdf">
+<link rel="alternate" type="application/rss+xml" title="Blog RSS Feed" href="/xwiki/bin/view/Blog/GlobalBlogRss?xpage=plain">
+
+                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+<link href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/style000.css" rel="stylesheet" type="text/css" media="all">
+<link href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/print000.css" rel="stylesheet" type="text/css" media="print">
+        <!--[if IE]>
+  <link href="/xwiki/bin/skin/skins/colibri/ie%2Dall.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+  <link href="/xwiki/bin/skin/skins/colibri/ie%2D6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/Settings.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/Style001.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/SharePag.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/TagCloud.css">
+<link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/modalPop.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/jumpToPa.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/confirma.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/notifica.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/tags0000.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/comments.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/attachme.css"><link rel="stylesheet" type="text/css" href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/paginati.css">
+
+    
+    <link href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/ajaxSugg.css" rel="stylesheet" type="text/css">
+<link href="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/lightbox.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+  <link href="/xwiki/bin/skin/resources/js/xwiki/lightbox/lightboxIE.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/prototyp.js"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/xwiki000.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+XWiki.webapppath = "xwiki/";
+XWiki.servletpath = "bin/";
+XWiki.contextPath = "/xwiki";
+XWiki.mainWiki = "xwiki";
+XWiki.currentWiki = "xwiki";
+XWiki.currentSpace = "Main";
+XWiki.currentPage = "java-lab-03";
+XWiki.editor = "";
+XWiki.viewer = "";
+XWiki.contextaction = "view";
+XWiki.docisnew = false;
+XWiki.docsyntax = "xwiki/2.0";
+XWiki.blacklistedSpaces = [ "Import","Panels","Scheduler","Stats","XAppClasses","XAppSheets","XAppTemplates","XWiki","WatchCode","WatchSheets","XApp","WatchAdmin","Watch","ColorThemes","AnnotationCode" ];
+XWiki.hasEdit = false;
+XWiki.hasProgramming = false;
+XWiki.hasBackupPackImportRights = false;
+window.docviewurl = "/xwiki/bin/view/Main/java%2Dlab%2D03";
+window.docediturl = "/xwiki/bin/edit/Main/java%2Dlab%2D03";
+window.docsaveurl = "/xwiki/bin/save/Main/java%2Dlab%2D03";
+window.docgeturl = "/xwiki/bin/get/Main/java%2Dlab%2D03";
+// ]]>
+</script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/effects0.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/modalPop.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/jumpToPa.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/confirma.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/confirme.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/notifica.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/xlist000.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/ajaxSugg.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/tags0000.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/comments.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/attachme.js" defer="defer"></script>
+
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/WebDAV00.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/Settings.js" defer="defer"></script>
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/Script00.js" defer="defer"></script>
+
+<script type="text/javascript" src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/compatib.js" defer="defer"></script>
+
+  </head>
+  <body id="body" class="wiki-xwiki space-Main viewbody ">
+
+  </div>
+ <div id="headerglobal" class="layoutsection">
+<div class="minwidthb"></div>
+  <div id="company">
+  <div id="companylogo">
+    <a href="http://vygovskiy.com/xwiki/bin/view/Main/" title="Home" rel="home">
+        <img src="1_Знакомство%20с%20интерфейсами%20%28Main.java-lab-03%29%20-%20XWiki_files/logo0000.png" alt="Wiki Logo">
+    </a>
+  </div>   </div>   <div id="globallinks">
+
+  </div>   <div class="clearfloats"></div>
+</div> 
+
+<div class="content" id="contentcontainer">
+<div id="contentcontainerinner">
+<div class="leftsidecolumns">
+  <div id="contentcolumn"> 
+          <div class="main layoutsubsection">
+      <div id="contentmenu" class="actionmenu">
+    <strong id="xwikicontentmenutitle" class="hidden">Page Actions:</strong>
+<div class="rightmenu">
+</div>
+<div class="leftmenu">
+  
+</div>
+    </div>
+    <div id="mainContentArea">
+  
+                
+
+   <div id="hierarchy">
+                                          <a href="http://vygovskiy.com/xwiki/bin/view/Main/Студентам">Студентам</a> <span class="separator">»</span> <a href="http://vygovskiy.com/xwiki/bin/view/Main/ООП">ОО-программирование на примере Java</a> <span class="separator">»</span> <span class="current">Знакомство с интерфейсами</span>
+                      </div>
+
+      
+    
+<div id="document-title"><h1>Знакомство с интерфейсами</h1></div>
+                      <div id="document-info">
+    <div class="xdocLastModification">       Изменил последним <span class="wikilink"><a href="http://vygovskiy.com/xwiki/bin/view/XWiki/leonidv">Леонид Выговский</a></span> 03-мар-2011
+    </div>
+    <div>
+                      <span id="commentsshortcut"><a href="http://vygovskiy.com/xwiki/bin/view/Main/java-lab-03?viewer=comments">Комментарии</a> <span class="itemCount">(0)</span></span>
+               <span class="separator">·</span>         <span id="attachmentsshortcut"><a href="http://vygovskiy.com/xwiki/bin/view/Main/java-lab-03?viewer=attachments">Файлы</a> <span class="itemCount">(0)</span></span>
+               <span class="separator">·</span>         <span id="historyshortcut"><a href="http://vygovskiy.com/xwiki/bin/view/Main/java-lab-03?viewer=history">История</a></span>
+               <span class="separator">·</span>         <span id="informationshortcut"><a href="http://vygovskiy.com/xwiki/bin/view/Main/java-lab-03?viewer=information">Информация</a></span>
+          </div>
+    <div class="clearfloats"></div>
+  </div>
+
+<div id="xwikicontent">
+<h2 id="H42643543B44C"><span>Цель</span></h2><ol><li>Знакомство с интерфейсами в Java;</li><li>Изучение шаблона <span class="wikiexternallink"><a href="http://ru.wikipedia.org/wiki/Стратегия_(шаблон_проектирования)">Стратегия</a></span>;</li><li>Изучение шаблона <span class="wikiexternallink"><a href="http://ru.wikipedia.org/wiki/Декоратор_(шаблон_проектирования)">Декоратор</a></span>;</li><li>Изучение модульного тестирования на примере фреймоврка <span class="wikiexternallink"><a href="http://ru.wikipedia.org/wiki/JUnit">JUnit</a></span></li></ol><h2 id="H41743043443043D438435"><span>Задание</span></h2><p>Реализовать библиотеку, которая позволяет обрабатывать целочисленный массив, при этом (пользователь библиотеки, это программист):</p><ol><li>Пользователю библиотеки должна быть предоставлена возможность выбирать обрабатываемые элементы;</li><li>Пользователю библиотеки должна быть предоставлена возможность самостоятельной реализации операций над массивом;</li><li>Вывод обработанного массива также определяется пользователем.</li></ol><p>Написать код, использующий библиотеку. При этом пользователь (который запустил программу) должен указать:</p><ol><li>Какие элементы массива обрабатывать ‒ четные или нечетные (определение по индексу в массиве (или) по самим значениям ‒ на усмотрение студента);</li><li>Операцию, производимую с каждым элементом. Должен быть выбор из двух операций (сами операции ‒ на усмотрение студента);</li><li>Способ вывода на экран обработанных элементов ‒ в виде столбца или списка;</li></ol><p>Реализовывать ввод элементов не обязательно. Список можно задать в коде.</p><h2 id="H42343A43043743043D43844F43A44043543043B438437430446438438"><span>Указания к реализации</span></h2><p>Реализовать библитеку - означает разработать пакет, содержащий класс <tt>ArrayHolder</tt> и интерфейсы <tt>Proccesor</tt>, <tt>Formatter</tt>.&nbsp;</p><p>Наборосок реализации форматированого вывода:</p><div class="box code"><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">interface</span> <span style="font-weight: bold; color: #0000FF; ">Formatter</span> <span style="color: #666666; ">{</span><br> &nbsp;<span style="font-weight: italic; color: #408080; ">/**<br>&nbsp;&nbsp;&nbsp;* &nbsp;Выводит переданный список в консоль.<br>&nbsp;&nbsp;&nbsp;*/</span><br> &nbsp;<span style="color: #B00040; ">void</span> <span style="color: #0000FF; ">out</span><span style="color: #666666; ">(</span>Collection data<span style="color: #666666; ">);</span><br><span style="color: #666666; ">}</span><br><br><span style="font-weight: italic; color: #408080; ">/**<br>&nbsp;* &nbsp;Selector реализует интерфейс Iterator. Конкретные реализации класса должны<br>&nbsp;* &nbsp;проходить по переданному итератору, отфильтровывая ненужные элементы. <br>&nbsp;*/</span><br><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">interface</span> <span style="font-weight: bold; color: #0000FF; ">Selector</span> <span style="font-weight: bold; color: #008000; ">extends</span> Iterator<span style="color: #666666; ">&lt;</span>Integer<span style="color: #666666; ">&gt;</span> <span style="color: #666666; ">{</span><br> &nbsp;&nbsp;<span style="font-weight: italic; color: #408080; ">/** <br>&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Устанавливает iterator, из которого берутся значения. <br>&nbsp;&nbsp;&nbsp;&nbsp;*/</span><br> &nbsp;&nbsp;<span style="color: #B00040; ">void</span> <span style="color: #0000FF; ">setIterator</span><span style="color: #666666; ">(</span>Iterator iterator<span style="color: #666666; ">);</span><br><span style="color: #666666; ">}</span><br><br><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">class</span> <span style="font-weight: bold; color: #0000FF; ">ArrayHolder</span> <span style="color: #666666; ">{</span><br> &nbsp;<span style="font-weight: bold; color: #008000; ">final</span> <span style="font-weight: bold; color: #008000; ">private</span> List data<span style="color: #666666; ">;</span> &nbsp;<br><br> &nbsp;<span style="font-weight: bold; color: #008000; ">private</span> Selector selector<span style="color: #666666; ">;</span><br><br> &nbsp;<span style="font-weight: bold; color: #008000; ">private</span> Proccessor proccesor<span style="color: #666666; ">;</span><br><br> &nbsp;<span style="font-weight: bold; color: #008000; ">private</span> Formatter formatter<span style="color: #666666; ">;</span><br><br>&nbsp;&nbsp;setFormatter<span style="color: #666666; ">(</span>Formatter formatter<span style="color: #666666; ">)</span> <span style="color: #666666; ">{</span><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: bold; color: #008000; ">this</span><span style="color: #666666; ">.</span><span style="color: #7D9029; ">formatter</span> <span style="color: #666666; ">=</span> formatter<span style="color: #666666; ">;</span><br> &nbsp;<span style="color: #666666; ">}</span><br> &nbsp;<br> &nbsp;<span style="font-weight: italic; color: #408080; ">/**<br>&nbsp;&nbsp;&nbsp;* &nbsp;&nbsp;Обрабатывает элементы и выводит полученный результат. &nbsp;<br>&nbsp;&nbsp;&nbsp;*/</span> &nbsp;&nbsp;&nbsp;&nbsp;<br> &nbsp;<span style="font-weight: bold; color: #008000; ">public</span> <span style="color: #B00040; ">void</span> <span style="color: #0000FF; ">process</span><span style="color: #666666; ">()</span> <span style="color: #666666; ">{</span><br> &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: italic; color: #408080; ">// действия по выбору и обработке элементов, пропущены. <br></span> &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: italic; color: #408080; ">// В результате этих действий получаем коллекцию result<br></span> &nbsp;&nbsp;&nbsp;formatter<span style="color: #666666; ">.</span><span style="color: #7D9029; ">out</span><span style="color: #666666; ">(</span>result<span style="color: #666666; ">);</span><br> &nbsp;<span style="color: #666666; ">}</span><br><span style="color: #666666; ">}</span><br><br><span style="font-weight: italic; color: #408080; ">/**<br>&nbsp;* &nbsp;Реализует вывод данных в консоль в виде строки.<br>&nbsp;*/</span><br><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">class</span> <span style="font-weight: bold; color: #0000FF; ">RowFormatter</span> <span style="font-weight: bold; color: #008000; ">implements</span> Formatter <span style="color: #666666; ">{</span><br> &nbsp;<span style="font-weight: bold; color: #008000; ">public</span> <span style="color: #B00040; ">void</span> <span style="color: #0000FF; ">out</span><span style="color: #666666; ">(</span>Collection data<span style="color: #666666; ">)</span> <span style="color: #666666; ">{</span><br> &nbsp;&nbsp;<span style="font-weight: italic; color: #408080; ">// код вывода в строку<br></span> &nbsp;<span style="color: #666666; ">}</span><br><span style="color: #666666; ">}</span><br><br><span style="font-weight: bold; color: #008000; ">public</span> <span style="font-weight: bold; color: #008000; ">class</span> <span style="font-weight: bold; color: #0000FF; ">ColumnFormatter</span> <span style="font-weight: bold; color: #008000; ">implements</span> Formatter <span style="color: #666666; ">{</span><br> &nbsp;<span style="font-weight: bold; color: #008000; ">public</span> <span style="color: #B00040; ">void</span> <span style="color: #0000FF; ">out</span><span style="color: #666666; ">(</span>Collection data<span style="color: #666666; ">)</span> <span style="color: #666666; ">{</span><br> &nbsp;&nbsp;&nbsp;<span style="font-weight: italic; color: #408080; ">// код вывода в колонку<br></span> &nbsp;<span style="color: #666666; ">}</span><br><span style="color: #666666; ">}</span></div><p>Приведенный выше код демонстрирует шаблон Стратегия. Как видно, класс <tt>ArrayHolder</tt> содержит ссыку на <tt>Formatter</tt>. Интерфейс <tt>Formatter</tt> описывает один метод - вывода переданных элементов в консоль. Непосредственно реализация метода осуществляется в другом классе, который передается <tt>ArrayHolder</tt>'у через <tt>setFormatter()</tt>.</p><p>Данные класса <tt>ArrayHolder</tt> должны быть неизменяемыми. При этом должен быть метод <tt>getData</tt>, который возвращает список чисел. Используйте методы класса <span class="wikiexternallink"><a href="http://java.sun.com/javase/6/docs/api/java/util/Collection.html">Collections</a></span>, чтобы гарантировать неизменяемость возвращаемого списка вне класса. Также не забудьте гарантировать, чтобы список не мог быть изменен по ссылке вне класса через ссылку, по которой был создан объект:</p><div class="box code"><span style="font-weight: italic; color: #408080; ">/*<br>&nbsp;* Кто сделает именно такой код для инициализации массива, тому виртуальный плюс.<br>&nbsp;* Естественно, asList самому писать не нужно, а нужно взять готовый.<br>&nbsp;*/</span><br>ArrayList data <span style="color: #666666; ">=</span> asList<span style="color: #666666; ">(</span><span style="color: #666666; ">1</span><span style="color: #666666; ">,</span><span style="color: #666666; ">2</span><span style="color: #666666; ">,</span><span style="color: #666666; ">3</span><span style="color: #666666; ">,</span><span style="color: #666666; ">4</span><span style="color: #666666; ">,</span><span style="color: #666666; ">5</span><span style="color: #666666; ">,</span><span style="color: #666666; ">6</span><span style="color: #666666; ">,</span><span style="color: #666666; ">7</span><span style="color: #666666; ">);</span> <br>ArrayHolder arrayHolder <span style="color: #666666; ">=</span> <span style="font-weight: bold; color: #008000; ">new</span> ArrayHolder<span style="color: #666666; ">(</span>data<span style="color: #666666; ">);</span><br>data<span style="color: #666666; ">.</span><span style="color: #7D9029; ">set</span><span style="color: #666666; ">(</span><span style="color: #666666; ">0</span><span style="color: #666666; ">,</span><span style="color: #666666; ">100</span><span style="color: #666666; ">);</span><br><br><span style="font-weight: bold; color: #008000; ">if</span> <span style="color: #666666; ">(</span>data<span style="color: #666666; ">.</span><span style="color: #7D9029; ">equals</span><span style="color: #666666; ">(</span>arrayHolder<span style="color: #666666; ">.</span><span style="color: #7D9029; ">getData</span><span style="color: #666666; ">()))</span> <span style="color: #666666; ">{</span><br>&nbsp;&nbsp;sysout<span style="color: #666666; ">(</span><span style="color: #BA2121; ">"ArrayHolder реализован неправильно"</span><span style="color: #666666; ">)</span><br><span style="color: #666666; ">}</span></div><p>Классы выбора элемента должны реализовывать интерфейс <span class="wikiexternallink"><a href="http://java.sun.com/javase/6/docs/api/java/util/Iterator.html">Iterator</a></span>. На вход реализация также принимает Iterator (через вызов setIterator), с помощью которого обходит коллекцию. Такой подход, когда элемент работает, по сути, с самим собой, называется шаблон Декоратор.&nbsp;</p><p>Для того, чтобы код метода setIterator не копировался в каждой реализации Selector, имеет смысл сделать абстрактный класс с реализацией этого метода и наследовать конкретные реализации алгоритмов выбора уже от него.</p><p>Должно быть как минимум два пакета ‒ один содержит класс ArrayHolder и интерфейсы. В другом пакете содержатся реализации интерфейсов.</p><p>Интерфейс Processor должен описывать функцию, которая на вход принимает число и на выходе возвращает другое число:</p><div class="box code">process(int):int</div><p>Для классов обработки и выбора элементов должны быть написаны тесты.</p>
+</div>
+</body>
+</html>
+<!-- This document saved from http://vygovskiy.com/xwiki/bin/view/Main/java-lab-03 -->
